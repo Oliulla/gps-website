@@ -13,6 +13,9 @@
 :root{
     --main-t-color: #2c2c2c;
     --white: #fff;
+    --cadetblue: #30d9df;
+    --beuty-clr: #ffc0cb;
+    --title-clr: #eeaaaa;
 }
 
 * {
@@ -78,14 +81,14 @@ h1{
     font-family: 'Playfair Display', serif;
     font-size: 300%;
     font-weight: 700;
-    color: var(--white);
+    color: var(--cadetblue);
     text-align: center;
     padding: 2%;
     text-shadow: 0px 0px 250px #000;
 }
 
 .content p{
-    color: var(--white);
+    color: var(--beuty-clr);
     padding-left: 80px;
 }
 
@@ -152,7 +155,7 @@ nav:hover ul{
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #fff;
+    background-color: var(--cadetblue);
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -196,7 +199,7 @@ nav:hover ul{
 }
 
 .left-col h2 {
-    color: #fffa;
+    color: var(--title-clr);
     font-size: 45px;
 }
 
@@ -219,6 +222,46 @@ nav:hover ul{
 
 }
 
+/* services section styling */
+.services-container {
+    margin-top: 100px;
+}
+
+.service-grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 40px;
+}
+
+.services-type {
+    margin:  0 10px;
+    box-shadow: 5px 4px 8px rgba(201, 97, 13, 0.4), 4px 6px 8px rgba(207, 204, 8, 0.8) inset;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.service-img img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 400px;
+    height: 400px;
+}
+
+.service-text {
+    padding: 10px 30px 30px;
+}
+
+.service-text h4, p, a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+.service-text a:hover{
+    color: var(--cadetblue);
+    text-decoration: underline;
+}
+
 /* responsive about section */
 @media screen and (max-width: 600px){
     .about-container{
@@ -228,7 +271,7 @@ nav:hover ul{
     .sidbar img {
         clip-path: none;
         padding-left: 30px;
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -240,7 +283,22 @@ nav:hover ul{
         margin: auto;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(images/background-img.jpg);
         background-size: cover;
-        display: table;
+        background-repeat: no-repeat;
+        display: block;
         top: 0;
     }
+    .menu-icon-container {
+        display: block;
+        cursor: pointer;
+        margin: 25px 0 0 50px;
+    }
+}
+
+/* responsive grid service */
+@media screen and (max-width: 600px) {
+    .service-grid-parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 40px;
+    }    
 }
