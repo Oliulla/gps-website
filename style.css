@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+
+:root{
+    --main-t-color: #2c2c2c;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #133f;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 200%;
+    font-weight: 700;
+    color: var(--main-t-color);
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--main-t-color);
+    font-size: 140%;
+    line-height: 180%;
+    text-align: justify;
+    font-weight: 300;
+}
+
+img{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.intro{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(images/background-img.jpg);
+    background-size: cover;
+    display: table;
+    top: 0;
+}
+
+.intro .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content{
+    max-width: 600px;
+    margin: auto;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 300%;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    padding: 2%;
+    text-shadow: 0px 0px 250px #000;
+}
+
+.content p{
+    color: var(--white);
+    padding-left: 80px;
+}
+
+.inner{
+    max-width: 600px;
+    margin: auto;
+    font-size: 170%;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Start Nav */
+nav{
+    float: left;
+    padding: 5% 5% 0 0;
+    height: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #30d9df;
+}
+
+nav ul, nav:active ul{
+    display: none;
+    left: 2.8rem;
+    top: 3.9rem;
+    padding: 8px 0;
+    width: 20%;
+    z-index: 1000;
+}
+
+nav li{
+    width: 100%;
+    padding: 8px 0 10px 7px;
+    margin: 0;
+}
+
+nav:hover ul{
+    display: block;
+    position:absolute
+}
+.menu-icon-container {
+    display: inline-block;
+    cursor: pointer;
+    margin: 50px 0 0 50px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate((-9px, 6px));
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* #menu-icon{
+    width: 30px;
+    height:26px;
+    background: url(images/nav-bar.png) center;
+    display: inline-block;
+    margin: 50px 0 0 50px;
+    z-index: 1000;
+} */
+
+/* Nav end */
+
+/* start about section */
+.about-container {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+}
+
+.left-col{
+    width: 60%;
+    margin: 4% 0 4% 4%;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.left-col h2 {
+    color: #fffa;
+    font-size: 45px;
+}
+
+.left-col p{
+    color: #fffa;
+}
+
+.sidbar{
+    width: 60%;
+    margin: 4%;
+}
+
+.sidbar img {
+    clip-path: circle(40%);
+}
+
+.hr-line{
+    margin: 100px 50px 0;
+    color: #30d9df;
+
+}
+
+/* responsive about section */
+@media screen and (max-width: 600px){
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidbar img {
+        clip-path: none;
+        padding-left: 30px;
+        width: 100%;
+    }
+}
+
+/* resposnsive header section */
+@media screen and (max-width: 600px) {
+    .intro{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(images/background-img.jpg);
+        background-size: cover;
+        display: table;
+        top: 0;
+    }
+}
