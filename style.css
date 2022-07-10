@@ -254,16 +254,16 @@ nav:hover ul{
 
 .service-text h4, p{
     color: var(--white);
-    text-decoration: none;
 }
 
 .service-text a {
     color: var(--title-clr);
+    text-decoration: underline;
 }
 
 .service-text a:hover{
     color: var(--cadetblue);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* team section styling start */
@@ -311,7 +311,6 @@ nav:hover ul{
 }
 
 .person-visit-link a {
-    text-decoration: none;
     color: var(--title-clr);
     font-size: 20px;
 }
