@@ -14,7 +14,7 @@
     --main-t-color: #2c2c2c;
     --white: #fff;
     --cadetblue: #30d9df;
-    --beuty-clr: #ffc0cb;
+    --beauty-clr: #ffc0cb;
     --title-clr: #eeaaaa;
 }
 
@@ -42,9 +42,9 @@ h2{
 p{
     font-family: 'Ubuntu', sans-serif;
     color: var(--main-t-color);
-    font-size: 140%;
-    line-height: 180%;
-    text-align: justify;
+    /* font-size: 140%; */
+    line-height: 1.4;
+    /* text-align: justify; */
     font-weight: 300;
 }
 
@@ -87,8 +87,9 @@ h1{
     text-shadow: 0px 0px 250px #000;
 }
 
+
 .content p{
-    color: var(--beuty-clr);
+    color: var(--beauty-clr);
     padding-left: 80px;
 }
 
@@ -251,15 +252,77 @@ nav:hover ul{
     padding: 10px 30px 30px;
 }
 
-.service-text h4, p, a {
+.service-text h4, p{
     color: var(--white);
     text-decoration: none;
 }
 
+.service-text a {
+    color: var(--title-clr);
+}
 
 .service-text a:hover{
     color: var(--cadetblue);
     text-decoration: underline;
+}
+
+/* team section styling start */
+.team-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20% 5%;
+
+}
+
+.teams-flex {
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.4), 4px 6px 8px rgba(0, 0, 0, 0.8);
+    width: 300px;
+    margin: 40px 15px;
+    /* box-shadow: 6px 6px 10px rgb(0 0 0 / 60%), 6px 6px 10px rgb(0 0 0 / 19%); */
+    border-radius: 5px;
+    /* text-align: center; */
+    transition: ease-in-out 0.6s;
+    padding-bottom: 20px;
+
+}
+
+.teams-flex:hover {
+    margin-top: 0;
+    border-left: 2px solid var(--cadetblue);
+    border-top: 2px solid var(--title-clr);
+    border-right: 2px solid var(--cadetblue);
+    border-bottom: 2px solid var(--beauty-clr);
+}
+
+/* team person image styled */
+.team-first-person-img {
+    width: 300px;
+    height: 200px;
+}
+
+.person-intro {
+    padding: 10px 20px;
+}
+
+.person-visit-link {
+    padding: 10px 20px;
+}
+
+.person-visit-link a {
+    text-decoration: none;
+    color: var(--title-clr);
+    font-size: 20px;
+}
+
+.person-visit-link a:hover {
+    text-decoration: underline;
+    color: var(--cadetblue);
+}
+
+.person-intro h3 {
+    color: var(--beauty-clr);
 }
 
 /* responsive about section */
@@ -302,3 +365,13 @@ nav:hover ul{
         margin: 0 40px;
     }    
 }
+
+/* responsive for mobile team section */
+@media screen and (max-width: 600px) {
+    .team-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
