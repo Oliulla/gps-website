@@ -231,7 +231,7 @@ nav:hover ul{
 .service-grid-parent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 40px;
+    margin: 0 10%;
 }
 
 .services-type {
@@ -245,7 +245,7 @@ nav:hover ul{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 400px;
-    height: 400px;
+    height: 300px;
 }
 
 .service-text {
@@ -297,13 +297,20 @@ nav:hover ul{
 }
 
 /* team person image styled */
-.team-first-person-img {
+.team-first-person-img img{
     width: 300px;
     height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .person-intro {
     padding: 10px 20px;
+}
+
+.person-intro a{
+    color: var(--cadetblue);
+    text-decoration: none;
 }
 
 .person-visit-link {
@@ -322,6 +329,105 @@ nav:hover ul{
 
 .person-intro h3 {
     color: var(--beauty-clr);
+}
+
+/* styling footer */
+.footer-container {
+    margin-top: 100px;
+    background-color: #222;
+    padding: 50px 0;
+}
+
+.footer-flex-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+/* .footer li:nth-last-child(){
+    list-style: none;
+    padding: 5px 0;
+} */
+
+.footer li a {
+    color: var(--cadetblue);
+    font-size: 20px;
+}
+
+.footer li a:hover {
+    color: #55aaff;
+}
+
+.icon-title {
+    color: var(--cadetblue);
+    font-size: 30px;
+
+}
+
+.icon-list li{
+    display: inline-block;
+}
+.icon-list li a{
+    padding: 10px;
+    font-size: 35px;
+    transition: ease-in 0.5s;
+    border-radius: 5px;
+}
+
+.icon-list li a:hover {
+    background-color: #ffeeaa;
+    color: #111;
+}
+
+.copyright-footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.copyright p {
+    color: #eeeaaa;
+}
+
+.dev-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+}
+
+.right-dev {
+    margin-left: 500px;
+}
+
+.right-dev h4, a {
+    color: #fff;
+}
+
+.dev-contact {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.footer-dev-title {
+    color: var(--cadetblue);
+}
+
+.dev-contact a {
+    padding-right: 10px;
+    color: #8dd8d8;
+}
+
+.dev-contact a:hover {
+    color: var(--cadetblue);
+    font-size: 20px;
 }
 
 /* responsive about section */
