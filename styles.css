@@ -51,13 +51,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .column-4{
-        visibility: hidden;
-    }
-    .column-2{
-        visibility: hidden;
-    }
-    .column-3{
-        visibility: hidden;
+    .column-4, .column-2, .column-3 {
+	display: none;
     }
 }
